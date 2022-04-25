@@ -1,10 +1,5 @@
-//function init () {
-
 const inquirer = require('inquirer');
 const fs = require('fs');
-//const generate = require('./generateReadMe.js');
-
-//const path = require('path');
 
 inquirer
   .prompt([
@@ -58,7 +53,7 @@ inquirer
   .then((data) => {
     
     function badge(data) {
-        const linenseType = data.license[0];
+        const linenseType = data.license;
         let licenseString = '';
         if (linenseType === 'Apache license 2.0') {
             licenseString = `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
@@ -82,38 +77,38 @@ inquirer
     };
     
     const readme =
-        `# ${data.title}
+`# ${data.title}
     
-        ##Description
+## Description
     
-        ##Table of Contents
-        1. [Installation](#Installation)
-        2. [Usage](#Usage)
-        3. [License](#License)
-        4. [Contributing](#Contributing)
-        5. [Tests](#Test)
-        6. [Questions](#Questions)
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [License](#license)
+4. [Contributing](#contributing)
+5. [Tests](#test)
+6. [Questions](#questions)
     
-        ##Installation
-        ${data.installation}
-        
-        ##Usage
-        ${data.usage}
-    
-        ##License
-        ${badge(data)}
-    
-        ##Contributing
-        ${data.contributing}
-    
-        ##Tests
-        ${data.test}
-    
-        ##Questions
-        ${data.github}
-        ${data.email}`;
+## Installation
+${data.installation}
 
-    fs.writeFile(data.title + 'README.md', readme, (err) =>
+## Usage
+${data.usage}
+    
+## License
+${badge(data)}
+    
+## Contributing
+${data.contributing}
+    
+## Tests
+${data.test}
+    
+## Questions
+https://github.com/${data.github}
+${data.email}`;
+        
+    fs.writeFile('Output/README.md', readme, (err) =>
       err ? console.log(err) : console.log('Success!')
     );
   })
