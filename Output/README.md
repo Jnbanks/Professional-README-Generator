@@ -1,6 +1,7 @@
-# tyrty
+# cumanchu
     
 ## Description
+good idea
     
 ## Table of Contents
 1. [Installation](#installation)
@@ -11,20 +12,21 @@
 6. [Questions](#questions)
     
 ## Installation
-rtyt
+download all
 
 ## Usage
-rtytr
+for eating
     
 ## License
-![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)
+![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
     
 ## Contributing
-rtyt
+only if you can whistle
     
 ## Tests
-rtyr
+with a scale
     
 ## Questions
-https://github.com/rtyr
-tryrt
+https://github.com/Jnbanks
+
+callme@mynumber.com

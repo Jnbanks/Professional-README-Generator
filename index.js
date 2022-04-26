@@ -80,6 +80,7 @@ inquirer
 `# ${data.title}
     
 ## Description
+${data.description}
     
 ## Table of Contents
 1. [Installation](#installation)
@@ -106,6 +107,7 @@ ${data.test}
     
 ## Questions
 https://github.com/${data.github}
+
 ${data.email}`;
         
     fs.writeFile('Output/README.md', readme, (err) =>
