@@ -30,6 +30,8 @@ Feel free to customize this Readme generator.
 Follow the installation instructions and Usage and check the Readme file that is produced for organization, legibility and function.
     
 ## Questions
+If you have any questions, feel free to contact me:
+
 https://github.com/Jnbanks
 
 joku.banks@gmail.com

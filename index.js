@@ -106,6 +106,8 @@ ${data.contributing}
 ${data.test}
     
 ## Questions
+If you have any questions, feel free to contact me:
+
 https://github.com/${data.github}
 
 ${data.email}`;
